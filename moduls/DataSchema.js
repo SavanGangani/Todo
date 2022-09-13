@@ -6,4 +6,4 @@ const DataSchema = new mongoose.Schema({
     data:{type: String}
 });
 
-module.exports = mongoose.model("Data", DataSchema);
+module.exports = mongoose.model("Task", DataSchema);
