@@ -9,7 +9,7 @@ const myData = require('./routes/data');
 dotenv.config();
 
 mongoose
-    .connect("mongodb+srv://SavanGangani:SAVAN2808@cluster0.94qkn7r.mongodb.net/todo?retryWrites=true&w=majority")
+    .connect(process.env.Mongo_URL)
     .then(()=> console.log("DB IS CONNECTION SUCCESSFULL"))
     .catch((e)=> console.log(e));
 
